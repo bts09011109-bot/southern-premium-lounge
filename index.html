@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南苑國際商務中心 SOUTHERN PREMIUM LOUNGE Official Website</title>
+    <!-- 引入 Tailwind CSS 網頁美化工具 -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        /* 奢華感金色與襯線字體微調 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+        .font-luxury { font-family: 'Noto Serif TC', serif; }
+    </style>
+</head>
+<body class="bg-[#1A1A1A] text-gray-100 font-sans">
+
+    <!-- 1. 導覽列 Navigation -->
+    <nav class="border-b border-gray-800 bg-[#1A1A1A]/90 sticky top-0 backdrop-blur-md z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-widest text-[#D4AF37] font-luxury">南苑國際商務中心</div>
+            <div class="space-x-6 text-sm text-gray-300">
+                <a href="#about" class="hover:text-[#D4AF37] transition">關於我們</a>
+                <a href="#services" class="hover:text-[#D4AF37] transition">設施服務</a>
+                <a href="#dining" class="hover:text-[#D4AF37] transition">精緻餐飲</a>
+                <a href="#contact" class="hover:text-[#D4AF37] transition">聯絡資訊</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. 首頁主視覺 Hero Section -->
+     <header id="about" class="relative py-24 md:py-36 text-left overflow-hidden border-b border-gray-900 bg-cover bg-center" 
+            style="background-image: url('首頁.JPG');">
+        
+        <div class="absolute inset-0 bg-black/65"></div>
+
+        <div class="max-w-3xl mx-6 md:mx-20 relative z-10">
+            <span class="text-[#D4AF37] text-sm tracking-widest uppercase font-semibold block mb-3">Welcome to SOUTHERN PREMIUM LOUNGE</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 tracking-wide font-luxury">
+                在喧囂的機場，為您保留一處尊榮靜謐
+            </h1>
+            <p class="text-gray-200 text-lg mb-8 leading-relaxed">
+                專為商務與卓越旅人打造的頂級休憩空間，融合奢華美學與極致服務，讓您的每一段旅程都有完美的起點。
+            </p>
+        </div>
+    </header>
+
+    <!-- 3. 設施與服務 Services Section -->
+    <section id="services" class="py-20 max-w-6xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-white font-luxury tracking-wide">空間與服務</h2>
+            <div class="w-12 h-0.5 bg-[#D4AF37] mx-auto mt-4"></div>
+        </div>
+        
+                <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-[#262626] rounded-lg border border-gray-800 hover:border-[#D4AF37]/50 transition duration-300 overflow-hidden">
+                <img src="沙發.JPG" class="w-full h-48 object-cover" alt="舒適休憩區">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-3">舒適休憩區</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        配備人體工學沙發與柔和採光，營造家一般的溫馨與舒適空間。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-[#262626] rounded-lg border border-gray-800 hover:border-[#D4AF37]/50 transition duration-300 overflow-hidden">
+                <img src="商務.JPG" class="w-full h-48 object-cover" alt="商務辦公設備">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-3">商務辦公設備</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        無線網路、隱密式個人辦公桌，滿足您隨時處理商務的需求。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-[#262626] rounded-lg border border-gray-800 hover:border-[#D4AF37]/50 transition duration-300 overflow-hidden">
+                <img src="pic3.jpg" class="w-full h-48 object-cover" alt="外帶餐盒">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-3">外帶餐盒</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        提供貴賓額外的選擇
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 頂級餐飲 Dining Section -->
+        <!-- 4. 頂級餐飲 Dining Section (含自動幻燈片輪播) -->
+    <section id="dining" class="py-20 bg-[#1A1A1A] border-t border-b border-gray-900">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <!-- 核心：幻燈片輪播圖片區 -->
+            <div class="relative w-full max-w-4xl mx-auto h-[350px] md:h-[450px] rounded-lg overflow-hidden shadow-2xl mb-12">
+                <!-- 輪播圖片群 (可自由修改 src 檔名) -->
+                <img id="slide-img" src="食物.JPG" class="w-full h-full object-cover transition-opacity duration-1000 opacity-100" alt="饗宴美饌">
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-white font-luxury tracking-wide">饗宴美饌</h2>
+                    <div class="w-12 h-0.5 bg-[#D4AF37] mx-auto mt-4"></div>
+                    <p class="text-gray-400 mt-6 max-w-xl mx-auto text-sm leading-relaxed">
+                        主廚精選當季新鮮食材，每日現做環球熱食、精緻法式點心，並由專業調酒師提供頂級酒水與精品咖啡。
+                    </p>
+                </div>
+
+                <!-- 溫馨提示告示區塊 -->
+                <div class="mt-12 border border-[#D4AF37]/30 bg-[#262626] rounded-lg p-6 max-w-2xl mx-auto text-center shadow-xl">
+                    <div class="inline-block text-[#D4AF37] text-sm tracking-widest font-bold border-b border-[#D4AF37]/30 pb-1 mb-3">
+                        GUEST NOTICE
+                    </div>
+                    <p class="text-gray-300 text-sm md:text-base tracking-wide leading-relaxed">
+                        為確保餐飲品質與食品安全，貴賓室內之精緻餐點與各類飲品謝絕外帶，敬請配合。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心控制腳本：放在 section 後面負責讓圖片動起來 -->
+    <script>
+        // 1. 在這裡放入你想輪播的電腦圖片檔名 (可以放 3 張、4 張或更多)
+        const diningImages = [
+            '食物.JPG', 
+            '酒.JPG', 
+            '冷盤.JPG'
+        ];
+
+        let currentIndex = 0;
+        const slideImg = document.getElementById('slide-img');
+
+        // 2. 設定每 4 秒 (4000毫秒) 自動換下一張圖
+        setInterval(() => {
+            // 淡出效果
+            slideImg.classList.remove('opacity-100');
+            slideImg.classList.add('opacity-0');
+
+            setTimeout(() => {
+                // 切換到下一張圖片的檔名
+                currentIndex = (currentIndex + 1) % diningImages.length;
+                slideImg.src = diningImages[currentIndex];
+
+                // 淡入效果
+                slideImg.classList.remove('opacity-0');
+                slideImg.classList.add('opacity-100');
+            }, 300); // 0.3秒後換圖，完成流暢轉場
+        }, 4000);
+    </script>
+
+    <!-- 5. 聯絡資訊與 FAQ Section -->
+    <footer id="contact" class="py-16 max-w-6xl mx-auto px-6 text-sm text-gray-400">
+        <div class="grid md:grid-cols-2 gap-12 border-b border-gray-800 pb-12">
+            <div>
+                <h4 class="text-white font-bold text-base mb-4 font-luxury tracking-wider text-[#D4AF37]">LOCATION & HOURS</h4>
+                <p class="mb-2">📍 位置指引：國際航廈出境管制區內（出境安檢後,左轉步行約3分鐘</p>
+                <p class="mb-2">⏰ 營業時間：每日 05:00 - 21:00（視航班異動調整）</p>
+                <p class="mb-2">📞 聯絡電話：07-805-5558 / 0800-555-548</p>
+                <p class="mb-2">📩 歡迎來信：splkhh2025@gmail.com</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-base mb-4 font-luxury tracking-wider text-[#D4AF37]">FAQ</h4>
+                <p class="text-white font-semibold mb-1">Q: 誰可以使用此貴賓室？</p>
+                <p class="mb-4">A: 國泰航空之商務艙旅客、Ｕ-First(Dragon Pass)、中國信託指定信用卡卡友或自費使用。</p>
+            </div>
+        </div>
+        <div class="text-center pt-8 text-xs text-gray-500">
+            &copy; 2026 SOUTHERN PREMIUM LOUNGE. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
